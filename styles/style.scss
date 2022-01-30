@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $VeryLightGray;
+    font-family: 'Poppins';
+}
+
+.header {
+    text-align: center;
+    margin-top: 60px;
+
+    &__first-title {
+        font-weight: 200;
+    }
+
+    &__first-title, &__second-title {
+        color: $VeryDarkBlue;
+    }
+
+    &__description {
+        color: $GrayishBlue;
+        padding-top: 20px;
+        width: 35%;
+        margin: auto;
+    }
+}
+
+.main {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    &__card {
+        padding: 30px;
+        height: 250px;
+        width: 350px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 5px 15px 10px hsla(212, 86%, 64%, 0.1);
+        position: relative;
+    }
+
+    &__border_cyan {
+        border-top: 4px solid $Cyan;
+    }
+
+    &__border_red {
+        border-top: 4px solid $Red;
+    }
+
+    &__border_orange {
+        border-top: 4px solid $Orange;
+    }
+
+    &__border_blue {
+        border-top: 4px solid $Blue;
+    }
+
+    &__header {
+        color: $VeryDarkBlue;
+    }
+
+    &__description {
+        color: $GrayishBlue;
+        font-size: 0.8rem;
+        padding: 10px 0;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+    }
+
+    &__middlecards {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .header {
+    &__description {
+        width: 90%;
+    }
+    }
+
+    .main {
+        flex-direction: column;
+
+    &__card {
+        width: 400px;
+    }
+
+    &__description {
+        font-size: 1rem;
+    }
+
+    }
+}

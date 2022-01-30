@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Poppins';
+}
+
+.header {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.header__first-title {
+  font-weight: 200;
+}
+
+.header__first-title, .header__second-title {
+  color: #4c4e61;
+}
+
+.header__description {
+  color: #a3a5ae;
+  padding-top: 20px;
+  width: 35%;
+  margin: auto;
+}
+
+.main {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.main__card {
+  padding: 30px;
+  height: 250px;
+  width: 350px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 15px 10px rgba(84, 158, 242, 0.1);
+          box-shadow: 5px 15px 10px rgba(84, 158, 242, 0.1);
+  position: relative;
+}
+
+.main__border_cyan {
+  border-top: 4px solid #45d3d3;
+}
+
+.main__border_red {
+  border-top: 4px solid #ea5353;
+}
+
+.main__border_orange {
+  border-top: 4px solid #fcaf4a;
+}
+
+.main__border_blue {
+  border-top: 4px solid #549ef2;
+}
+
+.main__header {
+  color: #4c4e61;
+}
+
+.main__description {
+  color: #a3a5ae;
+  font-size: 0.8rem;
+  padding: 10px 0;
+}
+
+.main__img {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.main__middlecards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+@media (max-width: 1000px) {
+  .header__description {
+    width: 90%;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main__card {
+    width: 400px;
+  }
+  .main__description {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
